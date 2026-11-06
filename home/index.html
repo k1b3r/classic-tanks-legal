@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Classic Tanks: arcade tank battles for Android</title>
+<meta name="description" content="Classic Tanks is a top-down arcade tank game for Android with 40 stages, 8 boss battles, 5 vehicles and upgrades.">
+<meta property="og:title" content="Classic Tanks">
+<meta property="og:description" content="Top-down arcade tank battles for Android: 40 stages, 8 boss battles, 5 vehicles and upgrades.">
+<meta property="og:image" content="https://k1b3r.github.io/classic-tanks-legal/home/img/social.jpg">
+<link rel="icon" href="img/favicon.png">
+<style>
+  :root {
+    --bg: #0b0f16; --panel: #111925; --line: #24344a; --text: #e6edf5; --dim: #9aa8ba;
+    --cyan: #66d6ff; --orange: #ff8a3c; --gold: #ffc94d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font-family: Bahnschrift, "Roboto Condensed", Roboto, "Segoe UI", system-ui, sans-serif;
+    font-size: 17px; line-height: 1.55;
+  }
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: var(--cyan); }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  header { border-bottom: 1px solid var(--line); }
+  header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--text); font-weight: 700; text-decoration: none; }
+  .brand img { width: 32px; height: 32px; border-radius: 7px; }
+  header nav { display: flex; gap: 18px; font-size: 15px; }
+  header nav a { color: var(--dim); text-decoration: none; }
+  header nav a:hover { color: var(--text); }
+  .hero { display: grid; grid-template-columns: 1.1fr .9fr; align-items: center; gap: 48px; padding: 64px 0 56px; }
+  .tag { color: var(--orange); font-size: 15px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 0 0 12px; }
+  h1 { font-size: clamp(44px, 7vw, 76px); line-height: 1.02; margin: 0 0 18px; letter-spacing: -.01em; }
+  .lead { font-size: 20px; color: var(--dim); margin: 0 0 26px; max-width: 34em; }
+  .status { display: inline-block; padding: 10px 16px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); font-weight: 700; }
+  .status span { color: var(--gold); }
+  .art { border-radius: 22px; box-shadow: 0 18px 50px rgba(0, 0, 0, .55); }
+  section { padding: 28px 0; }
+  h2 { font-size: 30px; line-height: 1.15; margin: 0 0 18px; }
+  .shot { width: 100%; border-radius: 12px; border: 1px solid var(--line); }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .card { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 20px; }
+  .card h3 { margin: 0 0 6px; font-size: 19px; }
+  .card p { margin: 0; color: var(--dim); font-size: 16px; }
+  .num { color: var(--cyan); }
+  .split { display: grid; grid-template-columns: 320px 1fr; gap: 40px; align-items: center; }
+  .split img { border-radius: 12px; border: 1px solid var(--line); }
+  .ranks { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 0; padding: 0; list-style: none; }
+  .ranks li { padding: 4px 11px; border-radius: 6px; color: #0b0f16; font-size: 15px; font-weight: 700; }
+  ul.vehicles { margin: 0; padding: 0; list-style: none; }
+  ul.vehicles li { padding: 9px 0; border-bottom: 1px solid var(--line); color: var(--dim); }
+  ul.vehicles strong { color: var(--text); }
+  footer { margin-top: 40px; border-top: 1px solid var(--line); color: var(--dim); font-size: 15px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px 24px; padding-top: 24px; padding-bottom: 28px; }
+  footer nav { display: flex; flex-wrap: wrap; gap: 18px; }
+  @media (max-width: 800px) {
+    .hero { grid-template-columns: 1fr; gap: 28px; padding: 36px 0 28px; }
+    .art { max-width: 340px; }
+    .grid { grid-template-columns: 1fr; }
+    .split { grid-template-columns: 1fr; gap: 20px; }
+    .split img { max-width: 320px; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <a class="brand" href="./"><img src="img/favicon.png" alt="" width="32" height="32">Classic Tanks</a>
+    <nav>
+      <a href="https://k1b3r.github.io/classic-tanks-legal/">Privacy</a>
+      <a href="https://k1b3r.github.io/classic-tanks-legal/terms/">Terms</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+  <div class="hero">
+    <div>
+      <p class="tag">Arcade tank combat</p>
+      <h1>Classic Tanks</h1>
+      <p class="lead">Take command of an armored vehicle, fight through 40 stages, beat massive bosses and upgrade your tanks. Built for touch screens.</p>
+      <p class="status"><span>Android</span> &nbsp;·&nbsp; In testing, coming to Google Play</p>
+    </div>
+    <img class="art" src="img/art.jpg" alt="Blue cartoon tank firing its cannon on a battlefield" width="512" height="512">
+  </div>
+
+  <section>
+    <h2>The battlefield</h2>
+    <img class="shot" src="img/battle.jpg" alt="Gameplay: a blue tank fights red tanks on a map with a river, bridges, brick walls and bushes" width="1280" height="591" loading="lazy">
+  </section>
+
+  <section>
+    <h2>What's inside</h2>
+    <div class="grid">
+      <div class="card"><h3><span class="num">40</span> stages</h3><p>Rivers, bridges, brick walls, concrete, sandbags and bushes to hide in.</p></div>
+      <div class="card"><h3><span class="num">8</span> boss battles</h3><p>Commander-General, Twin Fortress, artillery and an armored train, plus tougher versions.</p></div>
+      <div class="card"><h3><span class="num">5</span> vehicles</h3><p>From a light tank to a twin-cannon heavy. Amphibious vehicles swim across rivers.</p></div>
+      <div class="card"><h3>Supply crates</h3><p>Repairs, rapid fire, armor shields, splash shells and armor-piercing rounds.</p></div>
+      <div class="card"><h3>Upgrades</h3><p>Earn credits and improve armor, speed, rate of fire and turret traverse.</p></div>
+      <div class="card"><h3>Touch controls</h3><p>Twin sticks with aim assist, made for short sessions on your phone.</p></div>
+    </div>
+  </section>
+
+  <section class="split">
+    <img src="img/hangar.jpg" alt="Hangar screen with the T-84 tank and its upgrade options" width="386" height="540" loading="lazy">
+    <div>
+      <h2>Choose your machine</h2>
+      <ul class="vehicles">
+        <li><strong>T-84</strong>: balanced main battle tank</li>
+        <li><strong>Lynx</strong>: light tank with a fast turret</li>
+        <li><strong>BTR-8</strong>: amphibious APC with an autocannon</li>
+        <li><strong>BMP-3</strong>: amphibious, with guided missiles</li>
+        <li><strong>Mammoth</strong>: heavy twin-cannon tank</li>
+      </ul>
+      <ul class="ranks" aria-label="Enemy ranks">
+        <li style="background:#ffe36b">Recruit</li>
+        <li style="background:#ffb04d">Regular</li>
+        <li style="background:#ff8570">Veteran</li>
+        <li style="background:#ff70c8">Elite</li>
+        <li style="background:#c58cff">Ace</li>
+      </ul>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 Leontiy Tansorov</span>
+    <nav>
+      <a href="https://k1b3r.github.io/classic-tanks-legal/">Privacy Policy</a>
+      <a href="https://k1b3r.github.io/classic-tanks-legal/terms/">Terms of Use</a>
+      <a href="mailto:leontiy.t@gmail.com">Contact</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>
